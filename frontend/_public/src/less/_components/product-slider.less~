@@ -1,0 +1,11 @@
+.product-slider {
+
+  .product-slider--arrow arrow--next {
+    background: rgba(0,0,0,0,8);
+  }
+
+  .product-slider--arrow arrow--prev {
+    background: rgba(0,0,0,0,8);
+  }
+
+}

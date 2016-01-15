@@ -1,0 +1,7 @@
+.js--fancy-select {
+  background: rgba(0,0,0,0.2);
+}
+
+.js--fancy-select:hover {
+
+}
