@@ -1,9 +1,186 @@
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    background: rgba(0,0,0,0.2)!important;
+    color:#fff!important;
+    &:focus {
+        background: rgba(0,0,0,0.2)!important;
+	color:#fff!important;
+    }
+    &.has--error {
+        background: rgba(0,0,0,0.2)!important;
+	color:#fff!important;
+    }
+    &:-webkit-autofill{
+        background: rgba(0,0,0,0.2)!important;
+	color:#fff!important;
+	&:hover{
+            background: rgba(0,0,0,0.2)!important;
+            color:#fff!important;
+        }
+        &:focus{
+            background: rgba(0,0,0,0.2)!important;
+            color:#fff!important;
+        }
+    }
+}
+
+
+.register--field{
+    background: rgba(0,0,0,0.2)!important;
+    color:#fff!important;
+    * {
+        background: rgba(0,0,0,0.2)!important;
+	color:#fff!important;
+    }
+}
+
+
+#street{
+    background: rgba(0,0,0,0.2)!important;
+    color:#fff!important;
+}
+
+
+.select-field,
 .js--fancy-select {
-  background: rgba(0,0,0,0.2);
+    .unitize(max-width, 290);
+    .unitize-height(42);
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.2);
+
+    &:hover {
+        color: @brand-primary;
+	background: rgba(0,0,0,0.2);
+    }
+
+    *{
+	background: rgba(0,0,0,1);
+    }
+
+    select {
+        .appearance(none);
+        .unitize-padding(0, 40, 0, 10);
+        .unitize(line-height, 40);
+        .border-radius();
+        .white-gradient();
+        height: 100%;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+        border: 1px solid @btn-default-border-color;
+	background: rgba(0,0,0,0.2);
+
+        option {
+            .unitize-padding(4, 8);
+            color: @text-color-dark;
+            background: rgba(0,0,0,0.2);
+        }
+
+        &::-ms-expand {
+            display: none;
+	    background: rgba(0,0,0,0.2);
+        }
+
+        &:hover {
+            color: @brand-primary;
+            border-color: @brand-primary;
+            background: rgba(0,0,0,0.8);
+        }
+
+        &:focus {
+            outline: none;
+            color: @brand-primary;
+            border-color: @brand-primary;
+	    background: rgba(0,0,0,0.2);
+        }
+
+        &:focus::-ms-value {
+            color: @brand-primary;
+            background: none;
+	    background: rgba(0,0,0,0.2);
+        }
+
+        &:disabled {
+            .opacity(.5);
+            cursor: not-allowed;
+	    background: rgba(0,0,0,0.2);
+        }
+
+        &.has--error {
+            color: @input-error-color;
+            border-color: @input-error-border;
+	    background: rgba(0,0,0,0.2);
+        }
+    }
+
+    &:after {
+        .unitize-width(30);
+        .unitize-height(40);
+        .unitize(top, 1);
+        .user-select(none);
+        line-height: 40px;
+        max-height: 100%;
+        display: block;
+        content: @sw-icon-arrow-down;
+        position: absolute;
+        right: 0;
+        font-size: 5px;
+        border-left: 1px solid @border-color;
+        text-align: center;
+        font-family: @sw-icon-fontname;
+        pointer-events: none;
+	background: rgba(0,0,0,0.2);
+
+        &:hover {
+            color: @brand-primary;
+	    background: rgba(0,0,0,0.2);
+        }
+    }
+
+    // State disabled
+    &.is--disabled {
+	background: rgba(0,0,0,0.2);
+        select,
+        &:after {
+            .opacity(.5);
+            cursor: not-allowed;
+	    background: rgba(0,0,0,0.2);
+        }
+    }
+
+    // Error state
+    &.has--error {
+        select {
+            color: @input-error-color;
+            border-color: @input-error-border;
+	    background: rgba(0,0,0,0.2);
+        }
+
+        &:after {
+            color: @input-error-color;
+            border-color: @input-error-border;
+	    background: rgba(0,0,0,0.2);
+        }
+    }
 }
 
-.js--fancy-select:hover {
-  background: rgba(30,0,100,0.2);
-}
 
-//background-image: linear-gradient(to bottom, #fff 0%, #f8f8fa 100%);
+
+.sort--select {
+    background: rgba(0,0,0,1)!important;
+    * {
+	background: rgba(0,0,0,1)!important;
+    }
+}
