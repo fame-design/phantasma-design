@@ -84,6 +84,15 @@
 {* Service hotline *}
 {block name="frontend_index_footer_column_service_hotline"}
     <div class="footer--column column--hotline is--first block">
+        <span id="sv-badge-t4" style="padding-right:128px!important; padding-top 30px!important;"></span>
+        <script src="https://widgets.shopvote.de/js/reputation-badge-v2.min.js"></script>
+        <script>
+            var myShopID = 19907;
+            var myBadgetType = 4;
+            var myLanguage = 'DE';
+            var mySrc = ('https:' === document.location.protocol ? 'https' : 'http');
+            createRBadge(myShopID, myBadgetType, mySrc);
+        </script>
         {block name="frontend_index_footer_column_service_hotline_headline"}
             <div class="column--headline">{s name="sFooterServiceHotlineHead"}{/s}</div>
         {/block}
